@@ -5,7 +5,7 @@ import java.util.List;
 public class Pregunta {
 
     private int idPregunta;
-    private Categoria categoria;
+    private String categoria;
     private List<String> respuestas;
     private String desPregunta;
     private String resCorrecta;
@@ -13,7 +13,7 @@ public class Pregunta {
     public Pregunta() {
     }
 
-    public Pregunta(int idPregunta, Categoria categoria, List<String> respuestas, String desPregunta, String resCorrecta) {
+    public Pregunta(int idPregunta, String categoria, List<String> respuestas, String desPregunta, String resCorrecta) {
         this.idPregunta = idPregunta;
         this.categoria = categoria;
         this.respuestas = respuestas;
@@ -21,11 +21,11 @@ public class Pregunta {
         this.resCorrecta = resCorrecta;
     }
 
-    public Categoria getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(Categoria categoria) {
+    public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
 
