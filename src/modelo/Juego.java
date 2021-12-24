@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Juego {
 
+    private int idJuego;
     private Jugador jugador;
     List<Ronda> rondas;
     private int puntaje;
@@ -11,7 +12,8 @@ public class Juego {
     public Juego() {
     }
 
-    public Juego(Jugador jugador, List<Ronda> rondas, int puntaje) {
+    public Juego(int idJuego, Jugador jugador, List<Ronda> rondas, int puntaje) {
+        this.idJuego = idJuego;
         this.jugador = jugador;
         this.rondas = rondas;
         this.puntaje = puntaje;
@@ -39,5 +41,13 @@ public class Juego {
 
     public void setPuntaje(int puntaje) {
         this.puntaje = puntaje;
+    }
+
+    public int getIdJuego() {
+        return idJuego;
+    }
+
+    public void setIdJuego(int idJuego) {
+        this.idJuego = idJuego;
     }
 }

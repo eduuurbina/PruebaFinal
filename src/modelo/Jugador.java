@@ -1,6 +1,7 @@
 package modelo;
 
 class Jugador {
+
     private String nombre;
     private String cedula;
 

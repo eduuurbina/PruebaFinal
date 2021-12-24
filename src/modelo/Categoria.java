@@ -1,7 +1,7 @@
 package modelo;
 
 public class Categoria {
-
+    
     private int numDifcultad;
     private String difcultad;
 

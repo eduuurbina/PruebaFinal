@@ -5,12 +5,14 @@ import java.util.List;
 
 public class Ronda {
 
+    private int idRonda;
     private List<Pregunta> preguntas;
 
     public Ronda() {
     }
 
-    public Ronda(List<Pregunta> preguntas) {
+    public Ronda(int idRonda, List<Pregunta> preguntas) {
+        this.idRonda = idRonda;
         this.preguntas = preguntas;
     }
 
@@ -20,5 +22,13 @@ public class Ronda {
 
     public void setPreguntas(List<Pregunta> preguntas) {
         this.preguntas = preguntas;
+    }
+
+    public int getIdRonda() {
+        return idRonda;
+    }
+
+    public void setIdRonda(int idRonda) {
+        this.idRonda = idRonda;
     }
 }
